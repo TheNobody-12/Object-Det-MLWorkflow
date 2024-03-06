@@ -1,0 +1,5 @@
+setup.py
+HelmetDetection.egg-info/PKG-INFO
+HelmetDetection.egg-info/SOURCES.txt
+HelmetDetection.egg-info/dependency_links.txt
+HelmetDetection.egg-info/top_level.txt
