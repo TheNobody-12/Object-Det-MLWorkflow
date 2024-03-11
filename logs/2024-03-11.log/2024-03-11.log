@@ -1,30 +1,14 @@
-[2024-03-11 11:25:57,142 ] root - INFO - Starting data ingestion process
-[2024-03-11 11:25:57,143 ] root - INFO - Downloading data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 11:28:35,849 ] root - INFO - Downloaded data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 11:29:23,706 ] root - INFO - Extracted data from artifacts\data_ingestion\data.zip into directory artifacts\data_ingestion\feature_store
-[2024-03-11 11:31:47,182 ] root - INFO - Starting data ingestion process
-[2024-03-11 11:31:47,182 ] root - INFO - Downloading data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 11:34:24,896 ] root - INFO - Downloaded data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 11:34:58,088 ] root - INFO - Extracted data from artifacts\data_ingestion\data.zip into directory artifacts\data_ingestion\feature_store
-[2024-03-11 11:36:19,411 ] root - INFO - Starting data ingestion process
-[2024-03-11 11:36:19,411 ] root - INFO - Downloading data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 11:44:21,803 ] root - INFO - Starting data ingestion process
-[2024-03-11 11:44:21,844 ] root - INFO - Downloading data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 11:47:02,546 ] root - INFO - Downloaded data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 11:47:21,387 ] root - INFO - Conversion  of COCO to YOLO format
-[2024-03-11 11:52:40,757 ] root - INFO - Starting data ingestion process
-[2024-03-11 11:52:40,757 ] root - INFO - Downloading data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 11:55:30,931 ] root - INFO - Downloaded data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 11:55:54,708 ] root - INFO - Conversion  of COCO to YOLO format
-[2024-03-11 11:58:49,754 ] root - INFO - Starting data ingestion process
-[2024-03-11 11:58:49,756 ] root - INFO - Downloading data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 12:02:41,201 ] root - INFO - Downloaded data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
-[2024-03-11 12:04:17,812 ] root - INFO - Conversion  of COCO to YOLO format
-[2024-03-11 12:04:52,045 ] root - INFO - Writing data.yaml file
-[2024-03-11 12:04:52,046 ] root - INFO - successfully converted COCO to YOLO format
-[2024-03-11 12:04:52,062 ] root - INFO - Extracted data from artifacts\data_ingestion\data.zip into directory artifacts\data_ingestion\feature_store
-[2024-03-11 12:04:52,088 ] root - INFO - Data ingestion process completed successfully
-[2024-03-11 12:04:52,089 ] root - INFO - Data ingestion process completed
-[2024-03-11 12:04:52,090 ] root - INFO - Data ingestion artifacts: DataIngestionArtifacts(data_zip_file_path='artifacts\\data_ingestion\\data.zip', feature_store_path='artifacts\\data_ingestion\\feature_store')
-[2024-03-11 12:04:52,090 ] root - INFO - Data ingestion process completed
-[2024-03-11 12:04:52,090 ] root - INFO - Data ingestion artifacts: DataIngestionArtifacts(data_zip_file_path='artifacts\\data_ingestion\\data.zip', feature_store_path='artifacts\\data_ingestion\\feature_store')
+[2024-03-11 15:51:53,638 ] root - INFO - Starting model training process
+[2024-03-11 15:51:54,010 ] root - INFO - Starting model training process
+[2024-03-11 15:52:40,737 ] root - INFO - Starting model training process
+[2024-03-11 15:52:41,001 ] root - INFO - Starting model training process
+[2024-03-11 15:53:20,236 ] root - INFO - Starting model training process
+[2024-03-11 15:53:20,545 ] root - INFO - Starting model training process
+[2024-03-11 15:53:35,792 ] root - INFO - Starting model training process
+[2024-03-11 15:53:36,044 ] root - INFO - Starting model training process
+[2024-03-11 15:53:51,386 ] root - INFO - Starting model training process
+[2024-03-11 15:53:51,639 ] root - INFO - Starting model training process
+[2024-03-11 16:08:41,650 ] root - INFO - Starting model training process
+[2024-03-11 16:08:42,921 ] root - INFO - Starting model training process
+[2024-03-11 16:13:43,768 ] root - INFO - Starting model training process
+[2024-03-11 16:13:45,295 ] root - INFO - Starting model training process

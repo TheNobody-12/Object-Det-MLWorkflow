@@ -62,8 +62,8 @@ class DataIngestion:
             convert_coco(f"{feature_store_dir}/annotations", f"{feature_store_dir}/yolo_data")
 
             # copy images to yolo_data
-            shutil.copytree(f"{feature_store_dir}/COCO_Data/train/images", f"{feature_store_dir}/yolo_data/images/train")
-            shutil.copytree(f"{feature_store_dir}/COCO_Data/test/images", f"{feature_store_dir}/yolo_data/images/test")
+            shutil.copytree(f"{feature_store_dir}/COCO_Data/train", f"{feature_store_dir}/yolo_data/images/train")
+            shutil.copytree(f"{feature_store_dir}/COCO_Data/test", f"{feature_store_dir}/yolo_data/images/test")
             
             # the data.yaml file is used by the train.py file
             data_yaml = dict(

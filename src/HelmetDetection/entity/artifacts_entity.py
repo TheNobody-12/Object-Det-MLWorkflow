@@ -4,4 +4,13 @@ from dataclasses import dataclass
 class DataIngestionArtifacts:
     data_zip_file_path:str
     feature_store_path:str
+
+
+@dataclass
+class DataValidationArtifacts:
+    validation_status: bool
+
+@dataclass
+class ModelTrainerArtifacts:
+    trained_model_path: str
     
