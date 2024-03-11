@@ -1,8 +1,4 @@
-from src.HelmetDetection.logger import logging
-from src.HelmetDetection.exception import AppException
-import sys
+from src.HelmetDetection.pipeline.training_pipeline import TrainPipeline
 
-try:
-    a = 3/ "small"
-except Exception as e:
-    raise AppException(e, sys)
+obj = TrainPipeline()
+obj.run_pipeline()
