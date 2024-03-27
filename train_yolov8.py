@@ -8,7 +8,8 @@ import torch
 import argparse
 import re
 
-settings.update({'mlflow': False})
+settings.update({'mlflow': False,
+                 "datasets_dir":"D:\Sarthak\Object-Det-MLWorkflow"})
 
 # Define a wrapper class to ensure pytorch_model is an instance of torch.nn.Module
 class WrapperModel(nn.Module):
@@ -110,7 +111,7 @@ if __name__ == '__main__':
         model.add_callback("on_train_start",on_train_start)
         model.add_callback("on_fit_epoch_end",on_fit_epoch_end)
         model.add_callback("on_train_end", on_train_end)
-        results = model.train(task="detect",data=args.data ,imgsz=args.imgsz, batch=args.batch, epochs=args.epochs, device=args.device, project=args.project, nms=args.nms,cos_lr=args.cos_lr, optimizer=args.optimizer, seed=args.seed, name=args.name, resume=args.resume, fraction=args.fraction)
+        results = model.train(task="detect",data=args.data, imgsz=args.imgsz, batch=args.batch, epochs=args.epochs, device=args.device, project=args.project, nms=args.nms,cos_lr=args.cos_lr, optimizer=args.optimizer, seed=args.seed, name=args.name, resume=args.resume, fraction=args.fraction)
         
         # Log the metrics
         mlflow.log_metrics({

@@ -1,1 +1,8 @@
 artifacts/*
+YOLO_DATA/*
+research/data/*
+research/annotations/*
+mlruns/*
+videos/*
+*.pt
+```l

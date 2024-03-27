@@ -1,3 +1,4 @@
+README.md
 setup.py
 HelmetDetection.egg-info/PKG-INFO
 HelmetDetection.egg-info/SOURCES.txt

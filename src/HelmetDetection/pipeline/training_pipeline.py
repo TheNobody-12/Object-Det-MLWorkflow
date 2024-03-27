@@ -59,16 +59,16 @@ class TrainPipeline:
 
     def run_pipeline(self) -> None:
         try:
-            # data_ingestion_artifacts = self.start_data_ingestion()
-            # # data_ingestion_artifacts = "artifacts\data_ingestion\\feature_store"
-            # logging.info("Data ingestion process completed")
-            # logging.info(
-            #     f"Data ingestion artifacts: {data_ingestion_artifacts}")
-            # data_validation_artifacts = self.start_data_validation(
-            #     data_ingestion_artifact=data_ingestion_artifacts)
-            # logging.info("Data validation process completed")
-            # logging.info(
-            #     f"Data validation artifacts: {data_validation_artifacts}")
+            data_ingestion_artifacts = self.start_data_ingestion()
+            # data_ingestion_artifacts = "artifacts\data_ingestion\\feature_store"
+            logging.info("Data ingestion process completed")
+            logging.info(
+                f"Data ingestion artifacts: {data_ingestion_artifacts}")
+            data_validation_artifacts = self.start_data_validation(
+                data_ingestion_artifact=data_ingestion_artifacts)
+            logging.info("Data validation process completed")
+            logging.info(
+                f"Data validation artifacts: {data_validation_artifacts}")
             data_validation_artifacts = True
             model_trainer_artifacts = self.start_Model_training(
                 data_validation_artifact=data_validation_artifacts)
