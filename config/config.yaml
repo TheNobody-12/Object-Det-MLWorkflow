@@ -1,0 +1,28 @@
+ARTIFACTS_DIR: artifacts
+
+DATA_INGESTION:
+  DIR: data_ingestion
+  FEATURE_STORE_DIR: feature_store
+  DOWNLOAD_URL: "https://drive.google.com/file/d/1j-ZR67RkYgZkzgLXO1fN7tmPOYOK4nhK/view?usp=drive_link"
+
+DATA_VALIDATION:
+  DIR_NAME: data_validation
+  STATUS_FILE: status.txt
+  ALL_REQUIRED_FILES:
+    - images
+    - labels
+    - data.yaml
+
+MODEL_TRAINER:
+  DIR_NAME: model_trainer
+  PRETRAINED_WEIGHTS: yolov8n.pt
+  NO_EPOCHS: 1
+  BATCH_SIZE: 1
+  IMG_SIZE: 640
+  DEVICE: 0
+  WORKERS: 10
+  PROJECT: HelmetDet
+  NAME: yolov8s
+  NMS: true
+  FRACTION: 1.0
+  FORMAT: onnx

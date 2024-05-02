@@ -1,0 +1,40 @@
+[2024-05-02 10:59:38,420 ] root - INFO - Starting data ingestion process
+[2024-05-02 10:59:38,421 ] root - INFO - Downloading data from https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing into file artifacts\data_ingestion\data.zip
+[2024-05-02 11:02:12,423 ] root - INFO - Starting data ingestion process
+[2024-05-02 11:02:12,425 ] root - INFO - Downloading data from https://drive.google.com/file/d/1Xi8E9esUAxHAnXHSAddXDWeEENB0AHAN/view?usp=sharing into file artifacts\data_ingestion\data.zip
+[2024-05-02 11:02:14,633 ] root - INFO - Downloaded data from https://drive.google.com/file/d/1Xi8E9esUAxHAnXHSAddXDWeEENB0AHAN/view?usp=sharing into file artifacts\data_ingestion\data.zip
+[2024-05-02 11:04:04,909 ] root - INFO - Starting data ingestion process
+[2024-05-02 11:04:04,910 ] root - INFO - Downloading data from https://drive.google.com/file/d/1Xi8E9esUAxHAnXHSAddXDWeEENB0AHAN/view?usp=sharing into file artifacts\data_ingestion\data.zip
+[2024-05-02 11:04:06,394 ] root - INFO - Downloaded data from https://drive.google.com/file/d/1Xi8E9esUAxHAnXHSAddXDWeEENB0AHAN/view?usp=sharing into file artifacts\data_ingestion\data.zip
+[2024-05-02 11:05:09,416 ] root - INFO - Starting data ingestion process
+[2024-05-02 11:05:09,417 ] root - INFO - Downloading data from https://drive.google.com/file/d/1j-ZR67RkYgZkzgLXO1fN7tmPOYOK4nhK/view?usp=drive_link into file artifacts\data_ingestion\data.zip
+[2024-05-02 11:08:03,489 ] root - INFO - Downloaded data from https://drive.google.com/file/d/1j-ZR67RkYgZkzgLXO1fN7tmPOYOK4nhK/view?usp=drive_link into file artifacts\data_ingestion\data.zip
+[2024-05-02 11:08:43,680 ] root - INFO - Conversion  of COCO to YOLO format
+[2024-05-02 11:14:27,596 ] root - INFO - Starting data ingestion process
+[2024-05-02 11:14:27,596 ] root - INFO - Conversion  of COCO to YOLO format
+[2024-05-02 11:15:23,982 ] root - INFO - Starting data ingestion process
+[2024-05-02 11:15:23,982 ] root - INFO - Conversion  of COCO to YOLO format
+[2024-05-02 11:24:03,451 ] root - INFO - Starting data ingestion process
+[2024-05-02 11:24:03,451 ] root - INFO - Conversion  of COCO to YOLO format
+[2024-05-02 11:25:59,210 ] root - INFO - Starting data ingestion process
+[2024-05-02 11:25:59,210 ] root - INFO - Downloading data from https://drive.google.com/file/d/1j-ZR67RkYgZkzgLXO1fN7tmPOYOK4nhK/view?usp=drive_link into file artifacts\data_ingestion\data.zip
+[2024-05-02 11:28:36,579 ] root - INFO - Downloaded data from https://drive.google.com/file/d/1j-ZR67RkYgZkzgLXO1fN7tmPOYOK4nhK/view?usp=drive_link into file artifacts\data_ingestion\data.zip
+[2024-05-02 11:28:55,230 ] root - INFO - Conversion  of COCO to YOLO format
+[2024-05-02 11:29:59,431 ] root - INFO - Writing data.yaml file
+[2024-05-02 11:29:59,436 ] root - INFO - successfully converted COCO to YOLO format
+[2024-05-02 11:29:59,453 ] root - INFO - Extracted data from artifacts\data_ingestion\data.zip into directory artifacts\data_ingestion\feature_store
+[2024-05-02 11:29:59,467 ] root - INFO - Data ingestion process completed successfully
+[2024-05-02 11:29:59,467 ] root - INFO - Data ingestion process completed
+[2024-05-02 11:29:59,467 ] root - INFO - Data ingestion artifacts: DataIngestionArtifacts(data_zip_file_path='artifacts\\data_ingestion\\data.zip', feature_store_path='artifacts\\data_ingestion\\feature_store')
+[2024-05-02 11:29:59,468 ] root - INFO - Data ingestion process completed
+[2024-05-02 11:29:59,468 ] root - INFO - Data ingestion artifacts: DataIngestionArtifacts(data_zip_file_path='artifacts\\data_ingestion\\data.zip', feature_store_path='artifacts\\data_ingestion\\feature_store')
+[2024-05-02 11:29:59,468 ] root - INFO - Starting data validation process
+[2024-05-02 11:29:59,468 ] root - INFO - Initiating Data Validation
+[2024-05-02 11:29:59,471 ] root - INFO - Data Validation Completed
+[2024-05-02 11:29:59,471 ] root - INFO - Data Validation Status: True
+[2024-05-02 11:31:47,490 ] root - INFO - Data validation process completed
+[2024-05-02 11:31:47,494 ] root - INFO - Data validation artifacts: DataValidationArtifacts(validation_status=True)
+[2024-05-02 11:31:47,503 ] root - INFO - Data validation process completed
+[2024-05-02 11:31:47,503 ] root - INFO - Data validation artifacts: DataValidationArtifacts(validation_status=True)
+[2024-05-02 11:31:47,504 ] root - INFO - Starting model training process
+[2024-05-02 11:31:53,663 ] root - INFO - Starting model training process

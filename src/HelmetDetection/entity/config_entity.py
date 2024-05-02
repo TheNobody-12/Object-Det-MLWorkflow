@@ -62,5 +62,3 @@ class ModelTrainerConfig:
     fraction: float = MODEL_TRAINER_FRACTION
 
     format: str = MODEL_TRAINER_FORMAT
-
-    

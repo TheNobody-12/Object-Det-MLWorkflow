@@ -1,56 +1,31 @@
-ARTIFACTS_DIR: str = "artifacts"
+import yaml
 
-DATA_INGESTION: str = "data_ingestion"
+# Load the YAML configuration file
+with open("../../../../config\config.yaml", "r") as file:
+    config = yaml.safe_load(file)
 
-DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
+# Accessing parameters
+ARTIFACTS_DIR = config["ARTIFACTS_DIR"]
 
-DATA_DOWNLOAD_URL: str = "https://drive.google.com/file/d/1OT8qzsV-aiMxdEEgIkjQRm1HUR6cI0Zu/view?usp=sharing"
+DATA_INGESTION = config["DATA_INGESTION"]["DIR"]
+DATA_INGESTION_FEATURE_STORE_DIR = config["DATA_INGESTION"]["FEATURE_STORE_DIR"]
+DATA_DOWNLOAD_URL = config["DATA_INGESTION"]["DOWNLOAD_URL"]
 
-"""
-Data Validation related constants start with Data Validation
-"""
+DATA_VALIDATION_DIR_NAME = config["DATA_VALIDATION"]["DIR_NAME"]
+DATA_VALIDATION_STATUS_FILE = config["DATA_VALIDATION"]["STATUS_FILE"]
+DATA_VALIDATION_ALL_REQUIRED_FILES = config["DATA_VALIDATION"]["ALL_REQUIRED_FILES"]
 
-DATA_VALIDATION_DIR_NAME: str = "data_validation"
+MODEL_TRAINER_DIR_NAME = config["MODEL_TRAINER"]["DIR_NAME"]
+MODEL_TRAINER_PRETRAINED_WEIGHTS = config["MODEL_TRAINER"]["PRETRAINED_WEIGHTS"]
+MODEL_TRAINER_NO_EPOCHS = config["MODEL_TRAINER"]["NO_EPOCHS"]
+MODEL_TRAINER_BATCH_SIZE = config["MODEL_TRAINER"]["BATCH_SIZE"]
+MODEL_TRAINER_IMG_SIZE = config["MODEL_TRAINER"]["IMG_SIZE"]
+MODEL_TRAINER_DEVICE = config["MODEL_TRAINER"]["DEVICE"]
+MODEL_TRAINER_WORKERS = config["MODEL_TRAINER"]["WORKERS"]
+MODEL_TRAINER_PROJECT = config["MODEL_TRAINER"]["PROJECT"]
+MODEL_TRAINER_NAME = config["MODEL_TRAINER"]["NAME"]
+MODEL_TRAINER_NMS = config["MODEL_TRAINER"]["NMS"]
+MODEL_TRAINER_FRACTION = config["MODEL_TRAINER"]["FRACTION"]
+MODEL_TRAINER_FORMAT = config["MODEL_TRAINER"]["FORMAT"]
 
-DATA_VALIDATION_STATUS_FILE = "status.txt"
-
-DATA_VALIDATION_ALL_REQUIRED_FILES = ["images", "labels", "data.yaml"]
-
-
-"""
-Model Trainer related constants start with Model Trainer
-model,epochs,data,imgsz,device,batch,coslr,workers,project,name,nms,fraction,format
-"""
-
-MODEL_TRAINER_DIR_NAME: str = "model_trainer"
-
-MODEL_TRAINER_PRETRAINED_WEIGHTS: str = "yolov8n.pt"
-
-MODEL_TRAINER_NO_EPOCHS: int = 1
-
-MODEL_TRAINER_BATCH_SIZE: int = 1
-
-MODEL_TRAINER_IMG_SIZE: int = 640
-
-MODEL_TRAINER_DEVICE: int = 0
-
-MODEL_TRAINER_WORKERS: int = 10
-
-MODEL_TRAINER_PROJECT: str = "HelmetDet"
-
-MODEL_TRAINER_NAME: str = "yolov8s"
-
-MODEL_TRAINER_NMS: bool = True
-
-MODEL_TRAINER_FRACTION: float = 1.0
-
-MODEL_TRAINER_FORMAT: str = "onnx"
-
-
-
-
-
-
-
-
-
+#

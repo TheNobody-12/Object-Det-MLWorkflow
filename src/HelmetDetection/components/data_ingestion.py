@@ -55,15 +55,15 @@ class DataIngestion:
 
 
             # move annotations to annotations dir
-            shutil.move(f"{feature_store_dir}/COCO_Data/train/train.json", f"{feature_store_dir}/annotations/train.json")
-            shutil.move(f"{feature_store_dir}/COCO_Data/test/test.json", f"{feature_store_dir}/annotations/test.json")
+            shutil.move(f"{feature_store_dir}/COCO/annotations/instances_Images.json", f"{feature_store_dir}/annotations/train.json")
+            shutil.move(f"{feature_store_dir}/COCO/annotations/instances_val2014.json", f"{feature_store_dir}/annotations/test.json")
 
             # convert COCO to YOLO format
             convert_coco(f"{feature_store_dir}/annotations", f"{feature_store_dir}/yolo_data")
 
             # copy images to yolo_data
-            shutil.copytree(f"{feature_store_dir}/COCO_Data/train", f"{feature_store_dir}/yolo_data/images/train")
-            shutil.copytree(f"{feature_store_dir}/COCO_Data/test", f"{feature_store_dir}/yolo_data/images/test")
+            shutil.copytree(f"{feature_store_dir}/COCO/train2014", f"{feature_store_dir}/yolo_data/images/train")
+            shutil.copytree(f"{feature_store_dir}/COCO/val2014", f"{feature_store_dir}/yolo_data/images/test")
             
             # the data.yaml file is used by the train.py file
             data_yaml = dict(
@@ -89,6 +89,7 @@ class DataIngestion:
         '''initiate data ingestion process'''
         try:
             zip_file_path = self.download_data()
+            # zip_file_path = "artifacts/data_ingestion/data.zip"
             feature_store_dir = self.extract_data(zip_file_path)
             data_ingestion_artifacts = DataIngestionArtifacts(
                 data_zip_file_path=zip_file_path,
